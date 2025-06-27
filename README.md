@@ -1,10 +1,4 @@
-# 📝 Todo List Sederhana
-
-Aplikasi todo list sederhana yang dibangun dengan **Express.js** dan **MySQL** dengan tampilan frontend yang menarik dan responsif.
-
-
-
-## 🚀 Instalasi & Setup
+# Todo List Sederhana
 
 ### Prerequisites
 - Node.js 
@@ -15,7 +9,7 @@ Aplikasi todo list sederhana yang dibangun dengan **Express.js** dan **MySQL** d
 - Create, read, update, delete todos
 - Responsive design
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Base URL: `http://localhost:5000/api/todos`
 
@@ -29,15 +23,6 @@ Aplikasi todo list sederhana yang dibangun dengan **Express.js** dan **MySQL** d
 | `DELETE` | `/:id` | Hapus todo |
 | `DELETE` | `/completed/all` | Hapus semua todo yang selesai |
 
-### Response Format
-```json
-{
-  "success": true,
-  "data": [...],
-  "message": "Success message",
-  "count": 5
-}
-```
 
 ## 🗄️ Database Schema
 
@@ -63,15 +48,3 @@ CREATE TABLE todos (
 - `DB_USER` - MySQL username (default: root)
 - `DB_PASSWORD` - MySQL password
 - `DB_NAME` - MySQL database name (default: todolist_db)
-
-## 🚀 Deployment
-
-### Local Development
-1. Pastikan MySQL server berjalan
-2. Setup environment variables
-3. Jalankan `npm run dev`
-
-### Production
-1. Setup production database
-2. Update environment variables
-3. Jalankan `npm start`
