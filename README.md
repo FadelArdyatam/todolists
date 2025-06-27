@@ -13,9 +13,6 @@ Aplikasi todo list sederhana yang dibangun dengan **Express.js** dan **MySQL** d
 
 ## main features
 - Create, read, update, delete todos
-- Toggle completion status
-- Filter by status (All/Pending/Completed)
-- Bulk delete completed items
 - Responsive design
 
 ## 📡 API Endpoints
@@ -54,21 +51,27 @@ CREATE TABLE todos (
 );
 ```
 
-## 🎨 Fitur UI/UX
 
-### Design Features
-- **Gradient Background** - Background yang menarik dengan gradient biru-ungu
-- **Card Design** - Layout card dengan shadow dan border radius
-- **Smooth Animations** - Animasi slide-in dan fade-in
-- **Hover Effects** - Efek hover pada button dan todo items
-- **Responsive Layout** - Adaptif untuk berbagai ukuran layar
+### Scripts
+- `npm start` - Jalankan server production
+- `npm run dev` - Jalankan server development dengan nodemon
+- `npm test` - Jalankan tests (belum diimplementasi)
 
-### User Experience
-- **Intuitive Interface** - Interface yang mudah dipahami
-- **Real-time Feedback** - Pesan sukses/error yang informatif
-- **Keyboard Support** - Enter key untuk menambah todo
-- **Confirmation Dialogs** - Konfirmasi sebelum menghapus
-- **Loading States** - Indikator loading saat memuat data
+### Environment Variables
+- `PORT` - Port server (default: 5000)
+- `DB_HOST` - MySQL host (default: localhost)
+- `DB_USER` - MySQL username (default: root)
+- `DB_PASSWORD` - MySQL password
+- `DB_NAME` - MySQL database name (default: todolist_db)
 
-## 📁 Struktur Project
+## 🚀 Deployment
 
+### Local Development
+1. Pastikan MySQL server berjalan
+2. Setup environment variables
+3. Jalankan `npm run dev`
+
+### Production
+1. Setup production database
+2. Update environment variables
+3. Jalankan `npm start`
